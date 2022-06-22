@@ -8,14 +8,11 @@
     
 </head>
 <body>
-    <p>Mi nombre es :{{nombre}}</p>
-    <p>Mi edad es :{{edad}}</p>
-    <p>Yo naci el:{{fecha_de_cumpleaños}}</p>
-    
-    <p>{% for n in familias%} 
-        {{n}}
-        <br>
+    <table>
+        <tr><th>Nombre</th><th>edad</th><th>fecha_de_cumpleaños</th></tr>
+        {% for familias in familiares%}
+            <tr><td>{{ familias.nombre }}</td><td>{{ familias.edad }}</td><td>{{ familias.fecha_de_cumpleaños}}</td></tr>
         {% endfor %}
-    </p>
+        </table>
 </body>
 </html>

@@ -18,5 +18,5 @@ from django.urls import path
 from AppCoder.views import familias
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("familia/",familias)
+    path("familia/",familias),
 ]
